@@ -123,7 +123,7 @@ view: service_calls {
     sql: ${TABLE}.time_on_scene ;;
   }
 
-  dimension: totalresponsetime {
+  dimension: totalresponse_time {
     type: number
     sql: ${TABLE}.totalresponsetime ;;
   }
