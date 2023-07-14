@@ -106,6 +106,11 @@ view: service_calls {
     type: zipcode
     sql: ${TABLE}.zip_code ;;
   }
+  dimension: map_lat_long_location {
+      type: location
+      sql_latitude:${latitude} ;;
+      sql_longitude:${longitude} ;;
+    }
   measure: count {
     type: count
   }
